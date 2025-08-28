@@ -1,0 +1,8 @@
+com\example\bidding\controller\BidController.class
+com\example\bidding\controller\BidController$PlaceBidRequest.class
+com\example\bidding\outbox\OutboxEvent.class
+com\example\bidding\domain\OutboxRepository.class
+com\example\bidding\BiddingServiceApplication.class
+com\example\bidding\BiddingService.class
+com\example\bidding\domain\Bid.class
+com\example\bidding\domain\BidRepository.class

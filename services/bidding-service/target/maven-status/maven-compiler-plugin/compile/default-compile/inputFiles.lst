@@ -1,0 +1,7 @@
+C:\Swapnil\auction-backend\services\bidding-service\src\main\java\com\example\bidding\controller\BidController.java
+C:\Swapnil\auction-backend\services\bidding-service\src\main\java\com\example\bidding\BiddingService.java
+C:\Swapnil\auction-backend\services\bidding-service\src\main\java\com\example\bidding\domain\OutboxRepository.java
+C:\Swapnil\auction-backend\services\bidding-service\src\main\java\com\example\bidding\BiddingServiceApplication.java
+C:\Swapnil\auction-backend\services\bidding-service\src\main\java\com\example\bidding\outbox\OutboxEvent.java
+C:\Swapnil\auction-backend\services\bidding-service\src\main\java\com\example\bidding\domain\Bid.java
+C:\Swapnil\auction-backend\services\bidding-service\src\main\java\com\example\bidding\domain\BidRepository.java

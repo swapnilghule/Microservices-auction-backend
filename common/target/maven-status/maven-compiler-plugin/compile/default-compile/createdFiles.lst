@@ -1,0 +1,4 @@
+com\example\common\events\AuctionLifecycle.class
+com\example\common\events\BaseOutboxEvent.class
+com\example\common\events\AuctionLifecycle$Type.class
+com\example\common\events\BidPlacedEvent.class
