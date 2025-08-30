@@ -9,3 +9,6 @@ app:
   topics:
     bidEvents: bid-events.v1
     auctionEvents: auction-events.v1
+
+server:
+  port: 8085
