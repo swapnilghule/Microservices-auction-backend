@@ -3,7 +3,8 @@ import com.example.bidding.BiddingService; import org.springframework.http.Respo
 import java.math.BigDecimal; import java.util.Map; import java.util.UUID;
 
 
-@RestController @RequestMapping("/bids")
+@RestController
+@RequestMapping("/bids")
 public class BidController {
   private final BiddingService biddingService;
   public BidController(BiddingService biddingService)

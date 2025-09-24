@@ -19,7 +19,8 @@ public class AuctionController {
   public record CreateReq(String name){}
   public record BaseReq(UUID playerId, BigDecimal base) {}
 
-  @PostMapping public ResponseEntity<?> create(@RequestBody CreateReq req) throws JsonProcessingException {
+  @PostMapping public ResponseEntity<?> create(@RequestBody CreateReq req, @RequestHeader Map<String,String> headers) throws JsonProcessingException {
+    System.out.println("Headers received: " + headers);
     Auction auction = app.create(req.name());
     return ResponseEntity.ok(Map.of("auctionId", auction));
   }
