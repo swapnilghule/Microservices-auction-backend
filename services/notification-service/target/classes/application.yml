@@ -1,4 +1,7 @@
 spring:
+  redis:
+    host: localhost
+    port: 6379
   kafka:
     bootstrap-servers: localhost:9093, localhost:9094
     consumer:
@@ -9,6 +12,7 @@ app:
   topics:
     bidEvents: bid-events.v1
     auctionEvents: auction-events.v1
+    playerEvents: player-events.v1
 
 server:
-  port: 8085
+  port: 8087

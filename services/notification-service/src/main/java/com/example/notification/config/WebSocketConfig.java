@@ -1,5 +1,7 @@
 package com.example.notification.config;
 
+import com.example.notification.interceptor.AuctionHandshakeInterceptor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;
 import org.springframework.web.socket.config.annotation.WebSocketConfigurer;
@@ -11,15 +13,17 @@ import com.example.notification.handler.AuctionWebSocketHandler;
 @EnableWebSocket
 public class WebSocketConfig implements WebSocketConfigurer {
 
-    private final AuctionWebSocketHandler auctionWebSocketHandler;
+    @Autowired
+    private AuctionWebSocketHandler auctionWebSocketHandler;
 
-    public WebSocketConfig(AuctionWebSocketHandler auctionWebSocketHandler) {
-        this.auctionWebSocketHandler = auctionWebSocketHandler;
-    }
+    @Autowired
+    private AuctionHandshakeInterceptor handshakeInterceptor;
+
 
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
         registry.addHandler(auctionWebSocketHandler, "/ws/auction")
+                .addInterceptors(handshakeInterceptor)
                 .setAllowedOrigins("*"); // allow all origins (or restrict for security)
     }
 }

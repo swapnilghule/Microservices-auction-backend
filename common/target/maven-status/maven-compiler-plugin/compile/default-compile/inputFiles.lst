@@ -1,4 +1,5 @@
-C:\Swapnil\auction-backend\common\src\main\java\com\example\common\events\AuctionLifecycle.java
 C:\Swapnil\auction-backend\common\src\main\java\com\example\common\events\BaseOutboxEvent.java
-C:\Swapnil\auction-backend\common\src\main\java\com\example\common\events\BidPlacedEvent.java
 C:\Swapnil\auction-backend\common\src\main\java\com\example\common\events\component\JwtUtil.java
+C:\Swapnil\auction-backend\common\src\main\java\com\example\common\events\component\JsonUtils.java
+C:\Swapnil\auction-backend\common\src\main\java\com\example\common\events\BidPlacedEvent.java
+C:\Swapnil\auction-backend\common\src\main\java\com\example\common\events\AuctionLifecycle.java

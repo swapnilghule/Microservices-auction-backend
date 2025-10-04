@@ -10,6 +10,6 @@ import java.util.UUID;
 
 @Repository
 public interface OutboxRepository extends JpaRepository<OutboxEvent, UUID> {
-  @Query(value="SELECT * FROM outbox_events WHERE published = false ORDER BY occurred_at LIMIT 100", nativeQuery=true)
+  @Query(value="SELECT * FROM outbox_bid_events WHERE published = false ORDER BY occurred_at LIMIT 100", nativeQuery=true)
   List<OutboxEvent> findBatchToPublish();
 }

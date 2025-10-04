@@ -36,4 +36,14 @@ public class AuctionController {
     return ResponseEntity.ok(Map.of("auctionId", updatedAuction));
   }
 
+  @PostMapping("/{auctionId}/register/{userId}")
+  public UUID registerUser(@PathVariable UUID auctionId, @PathVariable UUID userId) throws Exception {
+    return app.registerUser(auctionId, userId);
+  }
+
+  @GetMapping("/{auctionId}/isRegistered/{userId}")
+  public boolean isRegistered(@PathVariable UUID auctionId, @PathVariable UUID userId) {
+    return app.isUserRegistered(auctionId, userId);
+  }
+
 }

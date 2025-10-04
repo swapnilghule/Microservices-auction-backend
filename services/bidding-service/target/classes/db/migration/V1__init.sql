@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS bids (
   amount NUMERIC(12,2) NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
-CREATE TABLE IF NOT EXISTS outbox_events (
+CREATE TABLE IF NOT EXISTS outbox_bid_events (
   id UUID PRIMARY KEY,
   aggregate_type TEXT NOT NULL,
   aggregate_id UUID NOT NULL,

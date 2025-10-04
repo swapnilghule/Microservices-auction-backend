@@ -21,6 +21,14 @@ spring:
           uri: http://localhost:8082
           predicates:
             - Path=/auctions/**
+        - id: player-service
+          uri: http://localhost:8086
+          predicates:
+            - Path=/players/**
+        - id: pool-service
+          uri: http://localhost:8086
+          predicates:
+            - Path=/pool/**
 
 logging:
   level:

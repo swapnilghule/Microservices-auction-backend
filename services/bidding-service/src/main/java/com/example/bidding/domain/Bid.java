@@ -1,15 +1,20 @@
 package com.example.bidding.domain;
-import jakarta.persistence.*; import java.math.BigDecimal; import java.time.Instant; import java.util.UUID;
+import jakarta.persistence.*;
+import lombok.Data;
+
+import java.math.BigDecimal; import java.time.Instant; import java.util.UUID;
+
+@Data
 @Entity @Table(name="bids")
 public class Bid {
   @Id private UUID id;
   private UUID auctionId;
   private UUID playerId;
   private UUID userId;
-  private BigDecimal amount;
+  private Integer amount;
   private Instant createdAt;
   public Bid() {}
-  public Bid(UUID id, UUID auctionId, UUID playerId, UUID userId, BigDecimal amount, Instant createdAt){
+  public Bid(UUID id, UUID auctionId, UUID playerId, UUID userId, Integer amount, Instant createdAt){
     this.id=id;
     this.auctionId=auctionId;
     this.playerId=playerId;

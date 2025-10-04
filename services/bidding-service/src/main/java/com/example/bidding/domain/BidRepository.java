@@ -1,4 +1,5 @@
 package com.example.bidding.domain;
+import com.example.bidding.dto.BidPlacedDTO;
 import com.example.bidding.outbox.OutboxEvent;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

@@ -6,9 +6,7 @@ import org.hibernate.annotations.Type;
 
 import java.time.Instant; import java.util.UUID;
 @Entity
-@Table(name="outbox_events")
-
-
+@Table(name="outbox_bid_events")
 public class OutboxEvent {
     @Id
     private UUID id;

@@ -17,7 +17,9 @@ public class GatewaySecurityConfig {
                 .authorizeExchange(exchanges -> exchanges
                         .pathMatchers("/auth/**").permitAll()
                         .pathMatchers("/auctions/**").permitAll()  // allow login/register
-                        .pathMatchers("/bids/**").permitAll()  // allow login/register
+                        .pathMatchers("/bids/**").permitAll()
+                        .pathMatchers("/players/**").permitAll()
+                        .pathMatchers("/pool/**").permitAll()// allow login/register
                         .anyExchange().authenticated()           // secure everything else
                 );
         return http.build();
